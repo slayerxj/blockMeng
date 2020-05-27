@@ -1,0 +1,20 @@
+{
+	"name": "Block Meng",
+	"description": "Block Mengyuan (or any other person) in weixin.qq.com",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "noMeng.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://wx.qq.com/*"
+			],
+			"run_at": "document_end",
+			"js": [
+				"contentScript.js"
+			]
+		}
+	],
+	"manifest_version": 2
+}
